@@ -25,3 +25,8 @@ function isUserAdult1(age) {
 }
 console.log(isUserAdult1(15));
 console.log(isUserAdult1(25));
+
+function isUserAdult2(age) {
+    return age >= 18;
+}
+console.log(isUserAdult2(18));

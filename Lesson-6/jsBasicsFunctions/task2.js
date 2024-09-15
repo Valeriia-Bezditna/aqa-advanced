@@ -4,10 +4,8 @@ function isUserAdult(age) {
         return true;
 
     }
-    if (age < 18) {
+    else {
         console.log("Особа є неповнолітньою");
-        return false;
-
     }
 
 }
@@ -15,3 +13,15 @@ isUserAdult(15);
 isUserAdult(25);
 
 
+
+// Використання тернарного оператора
+
+
+function isUserAdult1(age) {
+    const userAge = age >= 18 ? "Adult" : "Minor";
+        return userAge;
+
+
+}
+console.log(isUserAdult1(15));
+console.log(isUserAdult1(25));

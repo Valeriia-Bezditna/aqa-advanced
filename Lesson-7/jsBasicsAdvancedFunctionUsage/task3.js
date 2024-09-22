@@ -1,64 +1,32 @@
 function divide(numerator, denominator) {
     if (denominator === 0) {
         throw new Error("Ділити на нуль не можна!");
-        return numerator / denominator;
-    } else if (isFinite(numerator / denominator)) {
-        return numerator / denominator;
-    } else{
+
+    } if (typeof numerator !== "number" || typeof denominator !== "number") {
         throw new Error("Один із аргументів не є числом");
     }
+    return numerator / denominator;
 }
 
-try {
-    const resultDivide = divide(10, 0);// Код, який може викликати помилку
-    console.log(resultDivide);
-} catch (error) {
-    console.error('Сталася помилка:', error.message);// Обробка помилки
-} finally {
-    console.log("Робота завершена");
+function errorDivide(numerator, denominator, callback) {
+    try {
+        const resultDivide = callback(numerator, denominator);
+        console.log(resultDivide);
+    } catch (error) {
+        console.error('Сталася помилка:', error.message);
+    } finally {
+        console.log("Робота завершена");
+    }
 }
-try {
-    const resultDivide = divide(undefined, 9);
-    console.log(resultDivide);
-} catch (error) {
-    console.error('Сталася помилка:', error.message);
-} finally {
-    console.log("Робота завершена");
-}
-try {
-    const resultDivide = divide("string", 8);
-    console.log(resultDivide);
-} catch (error) {
-    console.error('Сталася помилка:', error.message);
-} finally {
-    console.log("Робота завершена");
-}
-try {
-    const resultDivide = divide("5", 8);
-    console.log(resultDivide);
-} catch (error) {
-    console.error('Сталася помилка:', error.message);
-} finally {
-    console.log("Робота завершена");
-}
-try {
-    const resultDivide = divide(10, undefined);
-    console.log(resultDivide);
-} catch (error) {
-    console.error('Сталася помилка:', error.message);
-} finally {
-    console.log("Робота завершена");
-}
-/*
+errorDivide(10, 5, divide);
+errorDivide(10, 0, divide);
+errorDivide(undefined, 5, divide);
+errorDivide(10, undefined, divide);
+errorDivide("ryryt", 5, divide);
 
 
-console.log(divide(0, 7));
-console.log(divide(undefined, 9));
-console.log(divide(10, 7));
-console.log(divide(10, undefined));
-console.log(divide("string", 8));
-console.log(divide("5", 8));
-*/
+
+
 
 
 

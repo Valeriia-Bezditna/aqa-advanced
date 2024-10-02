@@ -1,3 +1,5 @@
+
+
 export class Book {
     constructor(title, author, year) {
         this.title = title;
@@ -39,6 +41,14 @@ export class Book {
         }
         this._year = value;
     }
+    static findTheOldestBook(books){
+       return books.reduce((oldest, currentBook) => {
+           return currentBook.year < oldest.year ? currentBook : oldest;
+        });
+
+    }
+
+
 
 
 }

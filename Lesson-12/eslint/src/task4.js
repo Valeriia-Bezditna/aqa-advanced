@@ -4,5 +4,5 @@ const person = {
 	age: 16,
 };
 person.email = 'lb.yukinon@gmail.com';
-delete person.age;
-console.log(person);
+				delete person.age;
+console.log(  person);

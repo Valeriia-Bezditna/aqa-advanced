@@ -1,6 +1,6 @@
 function text(phrase, miliseconds) {
-	    setTimeout(() => {
+	setTimeout(() => {
 		console.log(phrase);
 	}, miliseconds);
 }
-     text('Learning javascript', 2000);
+text('Learning javascript', 2000);

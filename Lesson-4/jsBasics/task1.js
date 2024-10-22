@@ -1,8 +1,8 @@
-let firstNameLastName = 'Prosto Valeriia';
-let page = 7;
-let hasPassport = true;
-let age = null;
-let phone = undefined;
+const firstNameLastName = 'Prosto Valeriia';
+const page = 7;
+const hasPassport = true;
+const age = null;
+const phone = undefined;
 
 console.log(firstNameLastName);
 console.log(page);

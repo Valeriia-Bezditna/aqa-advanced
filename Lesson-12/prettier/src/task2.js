@@ -1,10 +1,10 @@
 function getPlanets() {
 	return fetch('https://swapi.dev/api/planets/1/')
 		.then((response) => response.json())
-		.then((data) => {
+		.then((data) => 
 			// console.log('GET Response: Planet', data);
-			return data;
-		})
+			data
+		)
 		.catch((error) => {
 			console.error('Error:', error);
 		});
@@ -14,10 +14,10 @@ function getPlanets() {
 function getUser() {
 	return fetch('https://jsonplaceholder.typicode.com/users/1')
 		.then((response) => response.json())
-		.then((data) => {
+		.then((data) => 
 			// console.log('GET Response: User', data);
-			return data;
-		})
+			data
+		)
 		.catch((error) => {
 			console.error('Error:', error);
 		});

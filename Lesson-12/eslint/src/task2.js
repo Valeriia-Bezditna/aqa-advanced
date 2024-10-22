@@ -1,12 +1,12 @@
 function getPlanets() {
 	return fetch('https://swapi.dev/api/planets/1/')
-		.then((  response) => response.json()   )
+		.then((response) => response.json())
 		.then((data) => 
 			// console.log('GET Response: Planet', data);
 			data
 		)
 		.catch((error) => {
-			console.error(   'Error:', error  );
+			console.error('Error:', error);
 		});
 }
 // getPlanets();

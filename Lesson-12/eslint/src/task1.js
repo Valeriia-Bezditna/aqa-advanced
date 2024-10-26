@@ -3,4 +3,4 @@ function text(phrase, miliseconds) {
 		console.log(phrase);
 	}, miliseconds);
 }
-text("Learning javascript", 2000);
+text('Learning javascript', 2000);

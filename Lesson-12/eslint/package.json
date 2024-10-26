@@ -1,9 +1,7 @@
 {
-  "name": "aqa-advanced",
+  "name": "eslint",
   "version": "1.0.0",
-  "description": "Now I can use git :)",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint",
@@ -12,16 +10,12 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "chalk": "^5.3.0",
-    "jest": "^29.7.0"
-  },
+  "description": "",
   "devDependencies": {
     "@eslint/js": "^9.13.0",
     "@stylistic/eslint-plugin-js": "^2.9.0",
     "eslint": "^9.13.0",
-    "eslint-plugin-jest": "^28.8.3",
     "globals": "^15.11.0",
-    "prettier": "3.3.3"
+    "husky": "^9.1.6"
   }
 }

@@ -1,6 +1,6 @@
 console.log ("Function declaration")
 function calculateAreaRectangle(width, height){
-    return width * height;
+	return width * height;
 
 
 }
@@ -10,7 +10,7 @@ console.log(calculateAreaRectangle(5, 12));
 console.log("function expression");
 
 const areaRectangle = function (width, height) {
-    return width * height;
+	return width * height;
 }
 
 console.log(areaRectangle(30, 45));
